@@ -7,7 +7,10 @@ with open('./text.txt','r') as f:
     urls_fin = re.subn(urls,"https://p-z-o.com/",strings)
     # print(urls_fin)
 
+# with open('./result.txt','w+') as f:
+#     arr = urls_fin[0].split(',')
+#     for i in arr:
+#         f.writelines(i+'\')
+
 with open('./result.txt','w+') as f:
-    arr = urls_fin[0].split(',')
-    for i in arr:
-        f.writelines(i+'\n')
+    f.writelines(urls_fin[0])
